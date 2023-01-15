@@ -197,6 +197,7 @@ Features you will love & enjoy
 .features-image {
     width: 800px;
     height: 1059px;
+   
 }
 
 .btn-third {
@@ -298,15 +299,17 @@ footer {
 }
 
 /* ========================
-Responsive on Mobile device 
+Responsive for Mobile device 
 ===========================*/
 
-@media only screen and (min-width: 320px) and (max-width: 480){
-    header{
-        font-size: 25px;
+@media only screen and  (max-width: 576){
+    .container{
+        width: 100%;
+        flex-direction: column;
     }
-    .feature-image {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-    } 
+    footer{
+        font-size: 5px;
+        margin: 0%;
+    }
+
 }
