@@ -1,0 +1,307 @@
+/* Global CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans';
+}
+
+.header-btn {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 64px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    margin: 0;
+    /* position: absolute; */
+    top: 150px;
+    left: 100%;
+    -ms-transform: translate(70%, 70%);
+    transform: translate(70%, 70%);
+
+
+}
+
+.header-btn:hover {
+    background-color: black;
+}
+
+/* ------------
+Header section 
+--------------*/
+header {
+    background: rgba(255, 144, 14, 0.1);
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+.container {
+    padding: 0 25px;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-logo:hover {
+    color: blue;
+    background-color: yellow;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+}
+
+nav>ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+/*------------
+     banner section
+    -------------- */
+.banner-section h1,
+p {
+    text-align: center;
+}
+
+header>img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 85px;
+    width: 50%;
+    height: 50%;
+    border-radius: 8px;
+    border-style: none;
+
+}
+
+/* Main section */
+
+/* ---------------
+      features list 
+      ----------------*/
+
+.feature-list-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.feature-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.feature-text h2 {
+    text-align: right;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 53px;
+    color: #727272;
+}
+
+.feature-text p {
+    text-align: right;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+}
+
+.btn-second {
+    margin-top: 10px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    border: 0;
+    padding: 18px 35px;
+    height: 64px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    margin: 0;
+    -ms-transform: translate(70%, 70%);
+    transform: translate(70%, 70%);
+}
+
+.btn-second:hover {
+    background-color: black;
+}
+
+/*  ------------
+Features you will love & enjoy 
+---------------------*/
+.features-details {
+    display: flex;
+}
+
+.features-details h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    text-align: left;
+}
+/*======================
+     vertical line before text
+======================== */
+.features-description h3::before{
+    content: "";
+    height: 100px;
+    width: 10px;
+    background: #FD6E0A;
+    float: left;
+    margin-right: 25px;
+}
+
+.features-details p {
+    text-align: left;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+
+}
+
+.features-details ul li {
+    list-style: none;
+
+}
+
+.features-details ul li h6 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+    color: #131313;
+}
+
+.features-details ul li p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+
+}
+
+.features-image {
+    width: 800px;
+    height: 1059px;
+}
+
+.btn-third {
+
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 65px;
+    border: 0;
+    padding: 18px 45px;
+    height: 170px;
+    background: #FD6E0A;
+    border-radius: 5px;
+    margin: 0;
+    -ms-transform: translate(-86%, -85%);
+    transform: translate(-86%, -85%);
+}
+
+/*  -----------
+    Some Facts 
+    -----------*/
+.facts-details h3 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+
+}
+
+.facts-details p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    text-align: left;
+
+}
+
+.facts-images {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: animate 1s linear infinite;
+}
+/*================= 
+animation added on icon
+==================== */
+@keyframes animate{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* --------------
+Our Sponsors 
+----------------*/
+
+.sponsor-detail h3 {
+
+    /* font-weight: 400; */
+    font-size: 45px;
+    line-height: 53px;
+    color: #131313;
+    text-align: center;
+
+}
+
+.sponsor-detail p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+.sponsor-images>ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;
+    filter: grayscale(1);
+}
+
+/* ==============
+footer section 
+=================*/
+footer {
+    background: rgba(255, 144, 14, 0.1);
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    font-weight: 400px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #424242;
+}
+
+/* ========================
+Responsive on Mobile device 
+===========================*/
+
+@media only screen and (max-width: 320px){
+    
+    
+}
